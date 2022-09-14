@@ -6,7 +6,7 @@
 Een zelfstandige (kruidenier, bakker, nagelstyliste, …) vraagt je om een website te bouwen waarop algemene info te vinden is, alsook een contactformulier en een webshop.
 
 De volgende pagina’s zijn noodzakelijk:
-* **Indexpagina**: welkomstpagina met in de spotlight algemene informatie over de diensten en producten van de zelfstandige 
+* **Indexpagina**: welkomstpagina met in de spotlight algemene informatie over de diensten en producten van de zelfstandige, alsook een vergelijking met de concurrentie.
 * **Webwinkel**: een pagina met een overzicht van minstens 20 producten in 4 categorieën met een korte beschrijving en prijs per product (minstens 5 producten per categorie).
 * **Contact**: contactinformatie van de firma met een contactformulier
 
@@ -35,7 +35,7 @@ Vergeet niet om regelmatig te committen en pushen naar je repository en controle
 
 - [ ]	De webpagina’s zijn cross-browser en vertonen in alle moderne browsers een consistente weergave.
 
-- [ ]	Er kan op elke pagina naar de andere pagina’s genavigeerd worden. Dit doe je door een navigatiebalk te voorzien via een lijst. Het moet op elke pagina duidelijk zijn op welke pagina de gebruiker zich bevindt.
+- [ ]	Er kan op elke pagina naar de andere pagina’s genavigeerd worden. Dit doe je door een navigatiebalk te voorzien via een lijst. Het moet op elke pagina duidelijk zijn op welke pagina de gebruiker zich bevindt. Doe dit door de actieve pagina te markeren m.b.v. een CSS klasse ‘active’.
 
 - [ ]	Op één van de hoeken van de pagina staat een chatknop. Deze knop hoeft niet te werken, maar hij is steeds zichtbaar op dezelfde plaats, ook al wordt er gescrolled.
 
@@ -74,6 +74,8 @@ Dit is de welkomstpagina die volgende informatie bevat:
 
 - [ ] Categorieën: Hier worden de verschillende categorieën van de webshop aangegeven waar de gebruiker kan naar doorlinken. Na het doorlinken worden de producten van de aangetikte categorie onmiddellijk op je juiste locatie getoond met de belangrijkste informatie.
 
+- [ ] Een tabel waarin een vergelijking wordt gemaakt met de producten/diensten van jouw firma en die van de concurrentie.
+
 ### Pagina met webshop
 De belangrijkste pagina van de volledige site. Op deze pagina kunnen potentiële klanten de aangeboden categorieën van de topics bekijken in detail. Het is dus enorm belangrijk dat de categorieën zeer professioneel en overzichtelijk worden gepresenteerd. 
 
@@ -86,4 +88,17 @@ De belangrijkste pagina van de volledige site. Op deze pagina kunnen potentiële
 **Er dient geen “winkelkar” systeem of iets dergelijks ingebouwd te worden. Potentiële klanten moeten immers per e-mail contact opnemen met het bedrijf.**
 
 ### Contactpagina
-Via deze pagina zullen potentiële klanten de gegevens vinden om contact op te nemen met de firma. Deze gegevens moeten correct en professioneel worden gepresenteerd. Dit omvat een formulier. Dat verstuurd wordt naar http://jkorpela.fi/cgi-bin/echo.cgi.
+Via deze pagina zullen potentiële klanten de gegevens vinden om contact op te nemen met de firma. Deze gegevens moeten correct en professioneel worden gepresenteerd. Dit omvat een formulier. Dat verstuurd wordt naar https://jkorpela.fi/cgi-bin/echo.cgi.
+
+* Een verzend button
+* Een reset button
+* Een keuzelijst (bv.: voor de ‘reden van contact’, welk departement je wil aanspreken, …)
+* Keuze m.b.v. radio buttons (bv.: keuze M/V/X, de categorie waarvoor je contact opneemt, …)
+* Inputvelden om de klant terug te kunnen contacteren:
+    * Familienaam
+    * Voornaam
+    * Adresgegevens
+    * Telefoonnummer
+    * E-mailadres (moet verplicht zijn en wordt gecontroleerd op geldigheid)
+* Een inputelement voor de vraag van de klant (verplicht)
+
