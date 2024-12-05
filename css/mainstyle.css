@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+header{
+    grid-area: header;
+    background-color: darkgray;
+    display: flex;
+}
+
+#logo{
+    display: inline-block;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "info info" "comparison reviews";
+
+    margin: 5rem;
+}
+
+main > *{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#info{
+    grid-area: info;
+    background-color: blue;
+}
+
+#comparison{
+    grid-area: comparison;
+    background-color: red;
+}
+
+#user-reviews{
+    grid-area: reviews;
+    background-color: yellow;
+}
+
+#user-reviews > :nth-child(odd){
+    background-color: green;
+}
+
+#user-reviews > :nth-child(even){
+    background-color: orange;
+}
+
+footer{
+    grid-area: footer;
+    background-color: goldenrod;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    /* margin: 0.25rem auto; */
+    display: inline-block;
+    width: 49%
+}
+
+footer p:first-child{
+    font-size: 0.75rem;
+}
+
+footer p:last-child{
+    font-weight: bold;
+}
