@@ -46,11 +46,11 @@ nav ul li:hover:not(:nth-child(3)){
     height: 5rem;
 }
 
-li:first-child{
+nav li:first-child{
     border-bottom-left-radius: 25px;
 }
 
-li:last-child{
+nav li:last-child{
     border-bottom-right-radius: 25px;
 }
 
