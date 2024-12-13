@@ -83,6 +83,18 @@ main > *{
     margin-top: 2rem;
     grid-area: info;
     background-color: blue;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#brands{
+    margin: 2rem;
+
+}
+
+#brands img{
+    height: 100px;
+    width: 100px;
 }
 
 #comparison{
