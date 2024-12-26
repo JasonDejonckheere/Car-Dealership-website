@@ -1,3 +1,15 @@
+/* COLOR PALLETTE
+    #639CBF     LIGHT BLUE
+    #3D6373     DARKER BLUE
+    #F2F2F2     WHITE
+    #595959     DARK GREY
+    #0D0D0D     BLACK
+*/
+
+
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -41,7 +53,8 @@ nav ul li:not(:nth-child(3)){
     height: 4rem;
     justify-content: center;
     align-items: center;
-    background-color: #3C3D37;
+    /* background-color: #3C3D37; */
+    background-color: #595959;
     padding: 0.25rem;
 }
 
@@ -86,10 +99,13 @@ main > *{
 #info{
     margin-top: 2rem;
     grid-area: info;
-    background-color: lightgray;
-    border: 3px solid black;
+    /* background-color: rgba(211, 211, 211, .9); */
+    background-color: #f2f2f2ce;
     text-align: center;
-    border-radius: 50px;
+}
+
+#comparison, #user-reviews{
+    padding: 2rem;
 }
 
 #brands{
@@ -107,36 +123,82 @@ main > *{
 
 #comparison{
     grid-area: comparison;
-    background-color: red;
+    background-color: #f2f2f2ce;
+    height: max-content;
+    width: 85%;
+    justify-self: right;
 }
 
 #user-reviews{
     grid-area: reviews;
-    background-color: yellow;
+    background-color: #f2f2f2ce;
+    height: max-content;
+    width: 85%;
+    justify-self: left;
 }
 
-#user-reviews > :nth-child(odd){
-    background-color: green;
+
+#user-reviews > article{
+    padding: 1rem;
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-#user-reviews > :nth-child(even){
-    background-color: orange;
+#user-reviews > article{
+    border-radius: 10px;
+}
+
+#user-reviews > article:nth-child(odd){
+    background-color: #F2F2F2;
+}
+
+#user-reviews > article:nth-child(even){
+    background-color: #89c0fece;
+}
+
+
+#user-reviews h2{
+    margin: 0;
+    padding: 0;
+}
+
+#reviews-img{
+    margin: .25em;
+    height: 50px;
+    width: 50px;
 }
 
 footer{
     grid-area: footer;
-    background-color: goldenrod;
+    background-color: #0D0D0D;
     position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
+    padding: .5rem;
 }
 
 footer p{
     display: inline-block;
-    width: 49%
+    width: 50%;
+    color: white;
+    margin: .25rem;
+    padding: 0;
 }
 
 footer p:last-child{
     font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.bigborder{
+    border: 3px solid black;
+    border-radius: 50px;
 }
