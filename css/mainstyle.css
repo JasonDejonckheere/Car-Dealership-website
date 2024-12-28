@@ -59,8 +59,9 @@ nav ul li:not(:nth-child(3)){
 }
 
 nav ul li:hover:not(:nth-child(3)){
-    background-color: #5C7F8E;
-    height: 5rem;
+    background-color: #5C7F8E !important; 
+    height: 5rem !important;
+    border: 0 !important;
 }
 
 nav li:first-child{
@@ -201,4 +202,9 @@ footer p:last-child{
 .bigborder{
     border: 3px solid black;
     border-radius: 50px;
+}
+
+.active{
+    background-color: #639CBF !important;
+    height: 4rem !important;    
 }
