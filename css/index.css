@@ -1,0 +1,8 @@
+main{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "info info" "comparison reviews";
+
+    margin: 5rem;
+}

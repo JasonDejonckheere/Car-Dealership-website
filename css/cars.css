@@ -1,0 +1,99 @@
+.shopbrands img{
+    height: 400px;
+    width: 80%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+main{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+#audui-header{
+    width: ;
+}
+
+/* #car-shop{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.item-desc{
+    width: 70% !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left !important;
+    background-color: rgba(210, 210, 210, 0.808);
+    border: 1px solid darkgray;
+    padding: 1rem
+}
+
+.shopbrands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 10rem;
+    background-color: #f2f2f2ce;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#car-shop section div > div{
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.brand-header{
+    text-align: center;
+    background-color: #639CBF;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    width: 40%;
+    margin: 1rem auto;
+    border: 2px solid black;
+    padding: .5rem;
+
+}
+.brand-header > img{
+    height: 100px;
+    width: 100px;
+}
+
+/* .bg-blue{
+    background-color: blue;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-pink{
+    background-color: pink;
+}
+
+.bg-navy{
+    background-color: navy;
+}
+
+.bg-salmon{
+    background-color: salmon;
+} */
+
+
+#car-shop{
+    width: 100%;
+    margin: 0;
+}
