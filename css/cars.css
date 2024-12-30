@@ -7,12 +7,56 @@
 }
 
 main{
-    width: 90%;
-    margin: 5rem auto;
+    width: 100%;
+    /* margin: 5rem auto; */
+    position: relative;
 }
 
-#audui-header{
-    width: ;
+.shopbrands{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#information{
+    background-color: #f2f2f2ce;
+    border: 1px solid darkgray;
+    border-radius: 50px;
+    border: 2px solid black;
+    text-align: center;
+    width: 60%;
+    margin: 5rem auto 10rem auto;
+}
+
+#audi-header{
+    width: max-content;
+    scale: 90%;
+}
+
+#information{
+    padding: 2rem;
+}
+
+#brands-nav{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+}
+
+#brands-nav a{
+    font-weight: bold;
+    text-decoration:overline;
+    text-decoration-color: #639CBF;
+    font-size: 1.75rem;
+    color: #595959;
+    margin: 0 0 1rem 0;
+    font-variant: small-caps ;
+}
+
+#brands-nav a:hover{
+    color: #639CBF;
+
 }
 
 /* #car-shop{
@@ -27,7 +71,7 @@ main{
     text-align: left !important;
     background-color: rgba(210, 210, 210, 0.808);
     border: 1px solid darkgray;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .shopbrands{
@@ -44,7 +88,7 @@ main{
 
 #car-shop section div > div{
     width: 50%;
-    margin: 2rem auto;
+    margin: 2rem auto 4rem auto;
     text-align: center;
 }
 
@@ -64,34 +108,22 @@ main{
     width: 100px;
 }
 
-/* .bg-blue{
-    background-color: blue;
+.to-top{
+    position: fixed;
+    bottom: -1px;
+    left: 48.5%;
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
 }
 
-.bg-red{
-    background-color: red;
+.to-top a{
+    text-decoration: none;
+    color: black;
 }
-
-.bg-green{
-    background-color: green;
-}
-
-.bg-yellow{
-    background-color: yellow;
-}
-
-.bg-pink{
-    background-color: pink;
-}
-
-.bg-navy{
-    background-color: navy;
-}
-
-.bg-salmon{
-    background-color: salmon;
-} */
-
 
 #car-shop{
     width: 100%;
