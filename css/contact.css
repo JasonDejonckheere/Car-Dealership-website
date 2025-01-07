@@ -1,0 +1,44 @@
+
+
+#contact-form{
+    width: 45%;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #f2f2f2ce;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+}
+
+.form-grouper{
+    width: 100%;
+    padding: .25em;
+}
+
+.form-grouper > label{
+    display: inline-block;
+    width: 15%;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.form-grouper > input{
+    width: 40%;
+    height: 20px;
+}
+
+textarea{
+    margin: 2rem 0;
+    padding: 1em;
+}
+
+#submit-button{
+    height: 25px;
+    width: 150px;
+    align-self: flex-end;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}

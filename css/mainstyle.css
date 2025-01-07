@@ -11,7 +11,9 @@
 } */
 
 
-
+html, body{
+    height: 100vhj;
+}
 
 body{
     margin: 0;
@@ -175,9 +177,9 @@ main > *{
 footer{
     grid-area: footer;
     background-color: #0D0D0D;
-    position: relative;
+    position: static;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     padding: .5rem;
 }
