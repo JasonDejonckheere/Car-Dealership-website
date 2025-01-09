@@ -29,12 +29,11 @@
             <form id="contact-form" method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on"
                 target="_blank">
                 <fieldset title="user-info" id="user-info">
-                    <div class="input-selector">
+                    <div class="input-selector" id="selector-gender">
                         <label for="gender">Gender: </label>
                         <input type="radio" name="gender" value="M" checked="checked">Male
                         <input type="radio" name="gender" value="F">Female
                     </div>
-                    <div class="filler"></div>
                     <div class="input-text">
                         <label for="txt-first-name">Firstname:* </label><input type="text" id="txt-first-name"
                             name="first-name" placeholder="your firstname.." required minlength="2">

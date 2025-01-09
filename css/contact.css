@@ -30,6 +30,14 @@
     width: 50%;
 }
 
+#selector-gender{
+    width: 100%;
+}
+
+#selector-gender label{
+    width: 15%;
+}
+
 #selector-brand label{
     width: max-content;
     margin-right: 1em;

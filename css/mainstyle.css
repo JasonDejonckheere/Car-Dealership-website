@@ -179,7 +179,7 @@ footer{
     background-color: #0D0D0D;
     position: static;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding: .5rem;
 }
@@ -209,3 +209,10 @@ footer p:last-child{
     background-color: #639CBF !important;
     height: 4rem !important;    
 }
+
+@media only screen and (min-width : 150px) and (max-width : 1920px){
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+ }
