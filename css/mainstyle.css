@@ -12,7 +12,7 @@
 
 
 html, body{
-    height: 100vhj;
+    height: 100vh;
 }
 
 body{
@@ -159,7 +159,7 @@ main > *{
 }
 
 #user-reviews > article:nth-child(even){
-    background-color: #89c0fece;
+    background-color: #89c0fe;
 }
 
 

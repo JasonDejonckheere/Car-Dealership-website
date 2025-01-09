@@ -11,58 +11,57 @@
 
 #user-info{
     display: flex;
-    background-color: lightblue;
+    background-color: #9bc9ff;
+    flex-flow: row wrap;
 }
 
-.form-grouper-text{
-    width: 60%;
-    padding: 1em;
-    background-color: lightgreen;
-}
-
-.form-grouper-text label, .form-grouper-text input{
-    margin: 5px 0;
-}
-
-.form-grouper-text label{
-    display: inline-block;
-    width: 25%;
-    text-align: left;
-    align-items: flex-start;
-}
-
-.form-grouper-text input{
-    width: 40%;
-    height: 20px;
-}
-
-.form-grouper-selectors{
-    width: 40%;
-    padding: 1em;
-    background-color: lightyellow;
-}
-
-.form-grouper-buttons{
-    width: 100%;
+.input-text, .input-selector, .filler{
+    width: calc(50% - 1em);
+    margin: .25em;
+    padding: .25em;
     display: flex;
 }
 
-.form-grouper-buttons *{
-    display: inline-block;
-    height: 25px;
-    width: 40%;
-    margin: 0 auto;
+.input-text label, .input-selector label{
+    width: 30%;
 }
 
-.form-grouper-buttons *:hover{
-    background-color: #b4e0fc;
-    border: 1px solid #868686;
+.input-text input{
+    width: 50%;
+}
+
+#selector-brand label{
+    width: max-content;
+    margin-right: 1em;
+}
+
+fieldset{
+    padding: .5em;
+    margin: 1em 0;
 }
 
 textarea{
-    margin: 2rem 0;
-    padding: 1em;
+    width: calc(100% - 1em);
+    padding: .5em;
 }
+
+#buttons{
+    display: flex;
+}
+
+.button{
+    height: 25px;
+    width: 80px;
+    margin: 1em 0;
+}
+
+#buttons-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 footer{
     position: fixed;

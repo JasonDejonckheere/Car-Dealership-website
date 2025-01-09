@@ -28,78 +28,74 @@
         <article>
             <form id="contact-form" method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on"
                 target="_blank">
-                <div id="user-info">
-                    <div class="form-grouper-text">
-                        <div>
-                            <label for="txt-first-name">Firstname:* </label><input type="text" id="txt-first-name"
-                                name="first-name" placeholder="your firstname.." required minlength="2">
-                        </div>
-                        <div>
-                            <label for="txt-last-name">Lastname:* </label><input type="text" id="txt-last-name"
-                                name="last-name" placeholder="your lastname.." required minlength="2">
-                        </div>
-                        <div>
-                            <label for="e-mail">E-mailadress:* </label><input type="email" id="e-mail" name="e-mail"
-                                placeholder="myname@email.com" required>
-                        </div>
-                        <div>
-                            <label for="phone-number">Phone number: </label><input type="tel" id="phone-number"
-                                name="phone-number" placeholder="04XX/12.34.56">
-                        </div>
-                        <div>
-                            <label for="txt-address">address: </label><input type="text" id="txt-address" name="address" placeholder="streetname number">                            
-                        </div>
-                        <div>
-
-                            <label for="country">country: </label>
-                                <select name="country">
-                                    <option value="" selected disabled hidden>select a country</option>
-                                    <option value="BE">Belgium</option>
-                                    <option value="NL">Netherlands</option>
-                                    <option value="UK">United Kingdom</option>
-                                    <option value="DE">Germany</option>
-                                    <option value="FR">France</option>
-                                    <option value="ES">Spain</option>
-                                    <option value="PRT">Portugal</option>
-                                    <option value="IT">Italy</option>
-                                    <option value="GR">Greece</option>
-                                    <option value="SE">Sweden</option>
-                                    <option value="NOR">Norway</option>
-                                    <option value="OTHER">Other</option>
-                                </select>
-
-                            </datalist>
-                        </div>
+                <fieldset title="user-info" id="user-info">
+                    <div class="input-selector">
+                        <label for="gender">Gender: </label>
+                        <input type="radio" name="gender" value="M" checked="checked">Male
+                        <input type="radio" name="gender" value="F">Female
                     </div>
-
-                    <div class="form-grouper-selectors">
-                        <div>
-                            <label for="gender">Gender: </label>
-                            <input type="radio" name="gender" value="M" checked="checked">Male
-                            <input type="radio" name="gender" value="F">Female
-                        </div>
-                        <div>
-                            <label for="brand">Car brand:* </label>
-                            <select name="brand" required>
-                                <option value="" selected disabled hidden>select a brand</option>
-                                <option value="bmw">Bmw</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="volkswagen">Volkswagen</option>
-                                <option value="volvo">Volvo</option>
-                                <option value="audi">Audi</option>
-                                <option value="kia">Kia</option>
-                            </select>
-                        </div>
+                    <div class="filler"></div>
+                    <div class="input-text">
+                        <label for="txt-first-name">Firstname:* </label><input type="text" id="txt-first-name"
+                            name="first-name" placeholder="your firstname.." required minlength="2">
                     </div>
+                    <div class="input-text">
+                        <label for="txt-last-name">Lastname:* </label><input type="text" id="txt-last-name"
+                            name="last-name" placeholder="your lastname.." required minlength="2">
+                    </div>
+                    <div class="input-text">
+                        <label for="e-mail">E-mailadress:* </label><input type="email" id="e-mail" name="e-mail"
+                            placeholder="myname@email.com" required>
+                    </div>
+                    <div class="input-text">
+                        <label for="phone-number">Phone number: </label><input type="tel" id="phone-number"
+                            name="phone-number" placeholder="04XX/12.34.56">
+                    </div>
+                    <div class="input-text">
+                        <label for="txt-address">Address: </label><input type="text" id="txt-address" name="address"
+                            placeholder="streetname number">
+                    </div>
+                    <div class="input-selector">
+                        <label for="country">Country: </label>
+                        <select name="country">
+                            <option value="" selected disabled hidden>select a country</option>
+                            <option value="BE">Belgium</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="ES">Spain</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="IT">Italy</option>
+                            <option value="GR">Greece</option>
+                            <option value="SE">Sweden</option>
+                            <option value="NOR">Norway</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
 
-                </div>
-                <textarea cols="80" rows="15" required
-                    placeholder="Hello, I am interested in your car, is it still available and could I gain more information? Kind regards"
-                    id="user-message" name="user-message"></textarea>
-                <div class="form-grouper-buttons">
-                    <input type="reset" value="reset">
-                    <input type="submit" value="send">
-                </div>
+                <fieldset title="user-message">
+                    <div class="input-selector" id="selector-brand">
+                        <label for="brand">Car brand:* </label>
+                        <select name="brand" required>
+                            <option value="" selected disabled hidden>select a brand</option>
+                            <option value="bmw">Bmw</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="audi">Audi</option>
+                            <option value="kia">Kia</option>
+                        </select>
+                    </div>
+                    <textarea cols="80" rows="15" required
+                        placeholder="Hello, I am interested in your car, is it still available and could I gain more information? Kind regards"
+                        id="message" name="message"></textarea>
+                    <div id="buttons-container">
+                        <input type="reset" value="reset" class="button">
+                        <input type="submit" value="send" class="button">
+                    </div>
+                </fieldset>
 
             </form>
         </article>
