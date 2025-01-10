@@ -19,7 +19,13 @@
 }
 
 html, body{
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
 }
 
 body{
@@ -61,7 +67,7 @@ nav ul{
     column-gap: 1px;
 }
 
-li::marker{
+nav li::marker{
     color: transparent !important;
 }
 
@@ -108,8 +114,6 @@ nav ul li a:not(:nth-child(3)){
 footer{
     grid-area: footer;
     background-color: #0D0D0D;
-    position: static;
-    bottom: 0;
     width: calc(100%-1rem);
     text-align: center;
     padding: .5rem;

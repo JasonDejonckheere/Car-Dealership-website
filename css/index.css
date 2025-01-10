@@ -16,9 +16,19 @@ main > *{
 #info{
     margin-top: 2rem;
     grid-area: info;
-    /* background-color: rgba(211, 211, 211, .9); */
     background-color: #f2f2f2ce;
     text-align: center;
+}
+
+#info p{
+    font-size: 1.25em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#info h1{
+    font-size: 1.75em;
+    text-decoration: underline;
 }
 
 #comparison, #user-reviews{
@@ -36,6 +46,11 @@ main > *{
 #brands img{
     height: 100px;
     width: 100px;
+    padding: 1em;
+}
+
+#brands img:hover{
+    scale: 125%;
 }
 
 #comparison{

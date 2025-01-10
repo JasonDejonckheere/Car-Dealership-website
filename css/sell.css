@@ -1,4 +1,26 @@
-/* footer{
-    position: fixed;
-    bottom: 0;
-} */
+article{
+    background-color: #f2f2f2ce;
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 60%;
+    margin: 5rem auto 3rem auto;
+    padding: 2em;
+}
+
+body{
+    height: 100vh;
+}
+
+#sell-info ul{
+    margin: 0 auto;
+}
+
+#sell-info ul li{
+    padding: 0;
+    margin: 0;
+}
+
+#sell-info li::marker{
+    font-size: 1.2em;
+    align-items: center;
+}

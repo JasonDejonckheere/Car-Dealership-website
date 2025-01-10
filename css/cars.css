@@ -1,11 +1,13 @@
 .shopbrands img{
     /* height: 400px;
     width: 650px; */
-    height: 60%;
+    height: 50%;
     width: 70%;
     object-fit: cover;
     border: 1px solid black;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 75px;
+    box-shadow: -5px 5px 50px rgb(78, 78, 78);
 }
 
 main{
@@ -112,11 +114,11 @@ main{
 #to-top{
     position: fixed;
     bottom: -1px;
-    left: 48.5%;
+    left: calc(50% - 2px - 2rem - 1rem);
+    margin: 0 auto;
     background-color: white;
     width: 4rem;
     height: 2rem;
-    margin: 0;
     border: 1px solid black;
     border-radius: 10px 10px 0 0;
     text-align: center;

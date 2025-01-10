@@ -28,7 +28,7 @@
         <article>
             <form id="contact-form" method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on"
                 target="_blank">
-                <fieldset title="user-info" id="user-info">
+                <fieldset id="user-info">
                     <div class="input-selector" id="selector-gender">
                         <label for="gender">Gender: </label>
                         <input type="radio" name="gender" value="M" checked="checked">Male
@@ -74,9 +74,9 @@
                     </div>
                 </fieldset>
 
-                <fieldset title="user-message">
+                <fieldset id="user-message">
                     <div class="input-selector" id="selector-brand">
-                        <label for="brand">Car brand: </label>
+                        <label for="brand">Car brand:</label>
                         <select name="brand">
                             <option value="" selected disabled hidden>select a brand</option>
                             <option value="bmw">Bmw</option>
@@ -86,6 +86,9 @@
                             <option value="audi">Audi</option>
                             <option value="kia">Kia</option>
                         </select>
+                    </div>
+                    <div class="input-selector" id="selector-file">
+                        <label for="file-input">File:</label><input type="file" id="file-input" name="file-input" accept="image/*" multiple>
                     </div>
                     <textarea cols="80" rows="15" required
                         placeholder="Hello, I am interested in your car, is it still available and could I gain more information? Kind regards"
