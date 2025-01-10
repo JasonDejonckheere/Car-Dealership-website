@@ -69,9 +69,3 @@ textarea{
     justify-content: space-between;
     align-items: center;
 }
-
-
-footer{
-    position: fixed;
-    bottom: 0;
-}

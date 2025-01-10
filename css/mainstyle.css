@@ -10,6 +10,13 @@
     padding: 0;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
+
+
+
+*{
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
 
 html, body{
     height: 100vh;
@@ -22,6 +29,12 @@ body{
     background-image: url("../images/bg.jpg");
     background-size: 100%;
     background-attachment: fixed;
+}
+
+
+main{
+    width: 80%;
+    margin: 4rem auto;
 }
 
 header{
@@ -89,97 +102,15 @@ nav ul li a:not(:nth-child(3)){
     align-items: center;
 }
 
-main{
-    /* margin: 5rem; */
-}
-
-main > *{
-    margin: 0.5rem;
-    padding: 0.5rem;
-}
-
-#info{
-    margin-top: 2rem;
-    grid-area: info;
-    /* background-color: rgba(211, 211, 211, .9); */
-    background-color: #f2f2f2ce;
-    text-align: center;
-}
-
-#comparison, #user-reviews{
-    padding: 2rem;
-}
-
-#brands{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    column-gap: 5rem;
-}
-
-#brands img{
-    height: 100px;
-    width: 100px;
-}
-
-#comparison{
-    grid-area: comparison;
-    background-color: #f2f2f2ce;
-    height: max-content;
-    width: 85%;
-    justify-self: right;
-}
-
-#user-reviews{
-    grid-area: reviews;
-    background-color: #f2f2f2ce;
-    height: max-content;
-    width: 85%;
-    justify-self: left;
-}
 
 
-#user-reviews > article{
-    padding: 1rem;
-    width: 75%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-#user-reviews > article{
-    border-radius: 10px;
-}
-
-#user-reviews > article:nth-child(odd){
-    background-color: #F2F2F2;
-}
-
-#user-reviews > article:nth-child(even){
-    background-color: #89c0fe;
-}
-
-
-#user-reviews h2{
-    margin: 0;
-    padding: 0;
-}
-
-#reviews-img{
-    margin: .25em;
-    height: 50px;
-    width: 50px;
-}
 
 footer{
     grid-area: footer;
     background-color: #0D0D0D;
     position: static;
     bottom: 0;
-    width: 100%;
+    width: calc(100%-1rem);
     text-align: center;
     padding: .5rem;
 }
@@ -194,15 +125,6 @@ footer p{
 
 footer p:last-child{
     font-weight: bold;
-}
-
-.center{
-    text-align: center;
-}
-
-.bigborder{
-    border: 3px solid black;
-    border-radius: 50px;
 }
 
 .active{
