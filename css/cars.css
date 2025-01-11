@@ -59,13 +59,7 @@ main{
 
 #brands-nav a:hover{
     color: #639CBF;
-
 }
-
-/* #car-shop{
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .item-desc{
     width: 70% !important;
@@ -137,15 +131,54 @@ main{
 
  /* tablet */
 
- @media only screen and (max-width : 1024px){
-    body{
-        
+ @media only screen and (max-width : 1500px){
+    #brands-nav{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: column wrap;
     }
+    
+    #brands-nav a{
+        display: block;
+        width: 50%;
+        font-size: 1.75rem;
+        margin: 0 0 1rem 0;
+        text-decoration:none;
+        background-color: #639CBF;
+        border: 1px solid gray;
+        color: black;
+        margin: .5rem auto;
+    }
+
+    #car-shop section div > div{
+        width: 100%;
+    }
+
+    .shopbrands img{
+        width: 75%;
+        height: auto;
+        object-fit: fill;
+        border: 1px solid black;
+        border-radius:75px;
+        box-shadow: -5px 5px 50px rgb(78, 78, 78);
+    }
+
+    #audi-header{
+        height: auto;
+        width: 100%;
+    }    
  }
 
  /* telefoon */
- @media only screen and (max-width : 320px){
-    body{
-        
+ @media only screen and (max-width : 440px){
+
+    #brands-nav a{
+        width: 100%;
+    }
+
+    
+    .shopbrands img{
+        width: 95%;
     }
  }
