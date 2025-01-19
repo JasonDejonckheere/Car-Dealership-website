@@ -16,7 +16,7 @@
     flex-flow: row wrap;
 }
 
-.input-text, .input-selector, .filler{
+.input-text, .input-selector{
     width: calc(50% - 1em);
     margin: .25em;
     padding: .25em;
@@ -79,14 +79,65 @@ textarea{
  /* tablet */
 
  @media only screen and (max-width : 1024px){
-    body{
-        
+    #contact-form{
+    width: 90%;
     }
- }
+
+    .input-text{
+        width: 100%;
+        height: 2em;
+    }
+
+    .input-text label, .input-selector label{
+        margin-right: 0;
+        width: 25%;
+    }
+    
+    .input-text input{
+        width: 100%;
+    }
+    
+    #user-info{
+        width: 80%;
+    }
+}
 
  /* telefoon */
- @media only screen and (max-width : 320px){
-    body{
-        
+ @media only screen and (max-width : 700px){
+    fieldset{
+        width: auto;
     }
+
+
+        #contact-form{
+            margin-bottom: 800px;
+            padding: auto;
+            position: relative;
+            background-color: transparent;
+            border: none;
+        }
+
+    fieldset{
+        margin: 0;
+        padding: 0;
+        scale: 90%;
+    }
+
+    #user-info{
+        position: absolute;
+        left: 5%;
+        top: 0;
+    }
+
+    #user-message{
+        position: absolute;
+        left: 0;
+        top: 275px;
+        background-color: #f2f2f2ce;
+    }
+
+    body{
+        width: auto;
+    }
+
  }

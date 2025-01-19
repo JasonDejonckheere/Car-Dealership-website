@@ -1,18 +1,4 @@
-/* COLOR PALLETTE
-    #639CBF     LIGHT BLUE
-    #3D6373     DARKER BLUE
-    #F2F2F2     WHITE
-    #595959     DARK GREY
-    #0D0D0D     BLACK
-*/
-/* html{
-    margin: 0;
-    padding: 0;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
-
-
 
 *{
     font-family: "Nunito Sans", Arial, sans-serif;
@@ -38,7 +24,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 main{
     width: 80%;
@@ -82,7 +67,6 @@ nav ul li:not(:nth-child(3)){
     height: 4rem;
     justify-content: center;
     align-items: center;
-    /* background-color: #3C3D37; */
     background-color: #595959;
     padding: 0.25rem;
 }
@@ -112,9 +96,6 @@ nav ul li a:not(:nth-child(3)){
     align-items: center;
 }
 
-
-
-
 footer{
     grid-area: footer;
     background-color: #0D0D0D;
@@ -139,6 +120,24 @@ footer p:last-child{
     background-color: #639CBF !important;
     height: 4rem !important;    
 }
+
+#chat-button img{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    background-color: rgba(223, 223, 223, 0.856);
+    border-radius: 25px 0 0 25px;
+    padding: .75em 2em .75em .75em ;
+}
+
+#chat-button img:hover{
+    cursor: pointer;
+    background-color: #639CBF;
+}
+
+
 
 
  /* tablet */
@@ -174,9 +173,6 @@ footer p:last-child{
         align-items: center;
     }
 
-    nav ul{
-    }
-
     .active{
         background-color: #639CBF !important;
         height: 6rem !important;    
@@ -191,20 +187,71 @@ footer p:last-child{
 }
 
  /* telefoon */
- @media only screen and (max-width : 440px){
+ @media only screen and (max-width : 700px){
     nav{
         width: 100%;
+        margin: 0 auto;
     }
 
     header{
         width: 90%;
     }
-    nav ul li:not(:nth-child(3)){
-        width: 12rem;
-        height: 7rem;
-    }
 
     .active{
         height: 7rem !important;    
+    }
+
+    #chat-button img{
+        height: 25px;
+        width: 25px;
+        position: fixed;
+        left: 0;
+        bottom: 50px;
+        background-color: rgba(223, 223, 223, 0.856);
+        border-radius: 0 25px 25px 0px;
+        padding: .75em;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        row-gap: -5px;
+    }
+
+    nav ul li:not(:nth-child(3)){
+        border-radius: 0;
+        height: 25px;
+        margin: 1px;
+        width: 80%;
+    }
+
+    .active{
+        height: 25px !important;
+    }
+
+    nav ul li:nth-child(4){
+        margin-top: -20px;
+    }
+
+    #logo{
+        position: absolute;
+        top: 150px;
+        left: 45%;
+        height: auto;
+        width: 10%;
+        border-radius: 25px;
+    }    
+
+    nav ul li:hover:not(:nth-child(3)){
+        background-color: #5C7F8E !important; 
+        height: 25px !important;
+        border: 0 !important;
+    }
+ }
+
+ @media only screen and (max-width : 440px){
+
+    #logo{
+        width: 15%;
     }
  }
