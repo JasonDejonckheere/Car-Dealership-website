@@ -150,13 +150,13 @@ table#table-comparison{
     padding: 5px;
 }
 
-#table-comparison tr:nth-child(1) th{
+#table-comparison thead tr th{
     text-align: center;
     border: 1px solid gray;
     text-transform: uppercase;
 }
 
-#table-comparison tr:not(:nth-child(1)) th{
+#table-comparison tr th{
     border: 1px solid gray;
     text-align: left;
 }
