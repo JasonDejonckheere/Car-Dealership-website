@@ -1,12 +1,13 @@
 A **frontend only** website made for school after learning Web Frontend Basics & Advanced.
 
-<div>
-    <a href="https://jasondejonckheere.github.io/Car-Dealership-website/index.html">Go to site</a>
-<div></div>
+[Go to site](https://jasondejonckheere.github.io/Car-Dealership-Website/index.html)
 
-Used:
-* HTML
-* CSS
-* JS
+<br>
 
-This uses a **fictive** company.
+**Used:**
+
+- HTML  
+- CSS  
+- JS  
+
+<small>This uses a **fictive** company.</small>
