@@ -1,4 +1,4 @@
-A **frontend only** website made for school after learning Web Frontend Basics & Advanced.
+A **frontend only** website made for school after learning Web Frontend Basics.
 
 [Go to site](https://jasondejonckheere.github.io/Car-Dealership-website/index.html)
 
@@ -7,7 +7,6 @@ A **frontend only** website made for school after learning Web Frontend Basics &
 **Used:**
 
 - HTML  
-- CSS  
-- JS  
+- CSS
 
 <small>This uses a **fictive** company.</small>
