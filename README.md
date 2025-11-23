@@ -1,6 +1,6 @@
 A **frontend only** website made for school after learning Web Frontend Basics & Advanced.
 
-[Go to site](https://jasondejonckheere.github.io/Car-Dealership-Website/index.html)
+[Go to site](https://jasondejonckheere.github.io/Car-Dealership-website/index.html)
 
 <br>
 
